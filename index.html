@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blanchard художественная галерея”</title>
+  <link rel="preload" href="fonts/OpenSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/choices.min.css">
+  <link rel="stylesheet" href="css/normalaze.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/about-us.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+        <div class="container">
+          <div class="header__body">
+            <button class="header__burger">
+              <span></span>
+            </button>
+              <a href="#" class="header__logo">
+                <img class="logo" src="img/Лого.svg" alt="logo">
+              </a>
+              <h1 class="visually-hidden">Blanchard художественная галерея</h1>
+              <nav class="header__menu" id="menu" >
+                <ul class="header__list">
+                    <li>
+                      <a href="#aboutus" class="header__link">О нас</a>
+                    </li>
+                    <li>
+                      <a href="#gallery" class="header__link">Галерея</a>
+                    </li>
+                    <li>
+                      <a href="" class="header__link">Каталог</a>
+                    </li>
+                    <li>
+                      <a href="" class="header__link">События</a>
+                    </li>
+                    <li>
+                      <a href="" class="header__link">Издания</a>
+                    </li>
+                    <li>
+                      <a href="" class="header__link">Проекты</a>
+                    </li>
+                    <li>
+                      <a href="" class="header__link">Контакты</a>
+                    </li>
+                </ul>
+                <div class="header__cont">
+                  <a href="" class="header__antry-img header__antry">Войти</a>
+                </div>
+              </nav>
+              <div class="header__search">
+                <button aria-label="Найти" type="submit" class="header__search-btn">
+                  <svg class="header__svg" width="23" height="22" viewbox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="6.8678" height="1.71695"
+                        transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z"
+                          fill="white" />
+                  </svg>
+                  <span></span>
+                </button>
+                <input id="my_blok" class="header__input" type="search" name="text" placeholder="Поиск по сайту">
+              </div>
+          </div>
+        </div>
+        <div class="custum__container">
+          <div class="custom-scroll">
+              <div class="custom-scroll__body">
+                <nav class="custom-scroll__nav">
+                    <ul class="custom-scroll__list topmenu">
+                      <li>
+                          <button class="custom-scroll__link submenu-link1">Реализм<span></span></button>
+                            <ul class="submenu submenu1">
+                              <li class="submenu__item" style="background-image: url('/img/57.png');"><a href="">Тинторетто</a></li>
+                              <li class="submenu__item"  style="background-image: url('/img/58.png');"><a href="">Фридрих</a></li>
+                              <li class="submenu__item"  style="background-image: url('/img/59.png');"><a href="">Леонардо</a></li>
+                              <li class="submenu__item"  style="background-image: url('/img/60.png');"><a href="">Верроккьо</a></li>
+                            </ul>
+                      </li>
+                      <li>
+                          <button class="custom-scroll__link submenu-link2">Импрессионизм<span></span></button>
+                          <ul class="submenu submenu2">
+                            <li class="submenu__item" style="background-image: url('/img/53.png');"><a href="">Моне</a></li>
+                            <li class="submenu__item" style="background-image: url('/img/54.png');"><a href="">Сислей</a></li>
+                            <li class="submenu__item" style="background-image: url('/img/55.png');"><a href="">Мане</a></li>
+                            <li class="submenu__item" style="background-image: url('/img/56.png');" ><a href="">Ренуар</a></li>
+                          </ul>
+                      </li>
+                      <li>
+                          <button class="custom-scroll__link submenu-link3">Постимпрессионизм<span></span></button>
+                          <ul class="submenu submenu3">
+                            <li class="submenu__item" style="background-image: url('/img/49.png');"><a href="">Ван Гог</a></li>
+                            <li class="submenu__item" style="background-image: url('/img/50.png');"><a href="">Сезан</a></li>
+                            <li class="submenu__item" style="background-image: url('/img/51.png');" ><a href="">Гоген</a></li>
+                            <li class="submenu__item" style="background-image: url('/img/52.png');"><a href="">Сера</a></li>
+                          </ul>
+                      </li>
+                      <li>
+                          <button class="custom-scroll__link submenu-link4">Авангард<span></span></button>
+                          <ul class="submenu submenu4">
+                            <li class="submenu__item" style="background-image: url('/img/45.png');"><a href="">Кандинский</a></li>
+                            <li class="submenu__item" style="background-image: url('/img/46.png');"><a href="">Маринетти</a></li>
+                            <li class="submenu__item" style="background-image: url('/img/47.png');"><a href="">Малевич</a></li>
+                            <li class="submenu__item" style="background-image: url('/img/48.png');"><a href="">Пикассо</a></li>
+                          </ul>
+                      </li>
+                      <li>
+                          <button class="custom-scroll__link submenu-link5">Футуризм<span></span></button>
+                          <ul class="submenu submenu5">
+                            <li class="submenu__item" style="background-image: url('/img/44.png');"><a href="">Карра</a></li>
+                            <li class="submenu__item" style="background-image: url('/img/43.png');"><a href="">Прателла</a></li>
+                            <li class="submenu__item" style="background-image: url('/img/42.png');"><a href="">Северини</a></li>
+                            <li class="submenu__item" style="background-image: url('/img/41.png');"><a href="">Балла</a></li>
+                          </ul>
+                      </li>
+                    </ul>
+                    <form class="header__search2">
+                      <button aria-label="Найти" type="submit" class="header__search-btn2">
+                        <svg width="23" height="22" viewbox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="6.8678" height="1.71695"
+                              transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z"
+                                fill="white" />
+                        </svg>
+                      </button>
+                      <input class="header__input2" type="search" name="text" placeholder="Поиск по сайту">
+                  </form>
+                </nav>
+              </div>
+          </div>
+        </div>
+      </header>
+    <div class="content">
+        <div class="header__swiper">
+          <div class="swiper-container">
+            <div class="heder__text-container">
+              <h2 class="header__title">Прикоснитесь к прекрасному</h2>
+              <p class="header__text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
+              <button class="header__btn"><span>Подписаться на рассылк</span>у</button>
+            </div>
+          <div class="swiper-wrapper">
+              <div class="swiper-slide1 swiper-slide"></div>
+              <div class="swiper-slide2 swiper-slide"></div>
+              <div class="swiper-slide3 swiper-slide"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          </div>
+        </div>
+    </div>
+    <section class="about-us" id="aboutus">
+      <h2 class="about-us__title"> О нас</h2>
+      <p class="about-us__text">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно
+        определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних
+        резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой
+        процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных
+        исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом
+        комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия
+        представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.</p>
+    </section>
+    ,<section class="gallery">
+      <h2 class="gallery__title" id="gallery" >Галерея</h2>
+      <div class="gallery__container">
+        <div class="gallery__select">
+          <p class="gallery__select-text">Фильтровать по:</p>
+          <select name="select">
+            <option value="Автор" class="gallery__select-text">Автор</option>
+            <option value="Направление" class="gallery__select-text">Направление</option>
+            <option value="Техника" class="gallery__select-text">Техника</option>
+          </select>
+          <p class="gallery__autotext">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a class="gallery__select-a" href="">авторизуйтесь</a>, либо воспользуйтесь лицензией. </p>
+        </div>
+
+        <div class="swiper-container  gallery__swiper-container">
+          <div class="swiper-wrapper gallery__swiper-wrapper">
+            <div class="gallery__swiper-slide swiper-slide"><img src="img/g80.png" alt=""> Slide 1</div>
+            <div class="gallery__swiper-slide swiper-slide"><img src="img/g80.png" alt=""> Slide 2</div>
+            <div class="gallery__swiper-slide swiper-slide"><img src="img/g80.png" alt=""> Slide 3</div>
+            <div class="gallery__swiper-slide swiper-slide"><img src="img/g80.png" alt=""> Slide 4</div>
+            <div class="gallery__swiper-slide swiper-slide"><img src="img/g80.png" alt=""> Slide 5</div>
+            <div class="gallery__swiper-slide swiper-slide"><img src="img/g80.png" alt=""> Slide 6</div>
+            <div class="gallery__swiper-slide swiper-slide"><img src="img/g80.png" alt=""> Slide 7</div>
+            <div class="gallery__swiper-slide swiper-slide"><img src="img/g80.png" alt=""> Slide 8</div>
+            <div class="gallery__swiper-slide swiper-slide"><img src="img/g80.png" alt=""> Slide 9</div>
+            <div class="gallery__swiper-slide swiper-slide"><img src="img/g80.png" alt=""> Slide 10</div>
+            <div class="gallery__swiper-slide swiper-slide"><img src="img/g80.png" alt=""> Slide 1</div>
+            <div class="gallery__swiper-slide swiper-slide"><img src="img/g80.png" alt=""> Slide 2</div>
+            <div class="gallery__swiper-slide swiper-slide"><img src="img/g80.png" alt=""> Slide 3</div>
+            <div class="gallery__swiper-slide swiper-slide"><img src="img/g80.png" alt=""> Slide 4</div>
+            <div class="gallery__swiper-slide swiper-slide"><img src="img/g80.png" alt=""> Slide 5</div>
+            <div class="gallery__swiper-slide swiper-slide"><img src="img/g80.png" alt=""> Slide 6</div>
+            <div class="gallery__swiper-slide swiper-slide"><img src="img/g80.png" alt=""> Slide 7</div>
+            <div class="gallery__swiper-slide swiper-slide"><img src="img/g80.png" alt=""> Slide 8</div>
+            <div class="gallery__swiper-slide swiper-slide"><img src="img/g80.png" alt=""> Slide 9</div>
+            <div class="gallery__swiper-slide swiper-slide"><img src="img/g80.png" alt=""> Slide 10</div>
+            <div class="gallery__swiper-slide swiper-slide"><img src="img/g80.png" alt=""> Slide 1</div>
+            <div class="gallery__swiper-slide swiper-slide"><img src="img/g80.png" alt=""> Slide 2</div>
+            <div class="gallery__swiper-slide swiper-slide"><img src="img/g80.png" alt=""> Slide 3</div>
+            <div class="gallery__swiper-slide swiper-slide"><img src="img/g80.png" alt=""> Slide 4</div>
+            <div class="gallery__swiper-slide swiper-slide"><img src="img/g80.png" alt=""> Slide 5</div>
+            <div class="gallery__swiper-slide swiper-slide"><img src="img/g80.png" alt=""> Slide 6</div>
+            <div class="gallery__swiper-slide swiper-slide"><img src="img/g80.png" alt=""> Slide 7</div>
+            <div class="gallery__swiper-slide swiper-slide"><img src="img/g80.png" alt=""> Slide 8</div>
+            <div class="gallery__swiper-slide swiper-slide"><img src="img/g80.png" alt=""> Slide 9</div>
+            <div class="gallery__swiper-slide swiper-slide"><img src="img/g80.png" alt=""> Slide 10</div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination gallery__swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="js/choices.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script defer src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
