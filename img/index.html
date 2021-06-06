@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blanchard художественная галерея”</title>
+  <link rel="preload" href="fonts/OpenSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
+  <link rel="stylesheet" href="css/simplebar.css">
+  <link rel="stylesheet" href="css/choices.min.css">
+  <link rel="stylesheet" href="css/normalaze.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/about-us.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/catalog.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+        <div class="container">
+          <div class="header__body">
+            <button class="header__burger">
+              <span></span>
+            </button>
+              <a href="#" class="header__logo">
+                <img class="logo" src="img/Лого.svg" alt="logo">
+              </a>
+              <h1 class="visually-hidden">Blanchard художественная галерея</h1>
+              <nav class="header__menu" id="menu" >
+                <ul class="header__list">
+                    <li>
+                      <a href="#aboutus" class="header__link">О нас</a>
+                    </li>
+                    <li>
+                      <a href="#gallery" class="header__link">Галерея</a>
+                    </li>
+                    <li>
+                      <a href="#catalog" class="header__link">Каталог</a>
+                    </li>
+                    <li>
+                      <a href="" class="header__link">События</a>
+                    </li>
+                    <li>
+                      <a href="" class="header__link">Издания</a>
+                    </li>
+                    <li>
+                      <a href="" class="header__link">Проекты</a>
+                    </li>
+                    <li>
+                      <a href="" class="header__link">Контакты</a>
+                    </li>
+                </ul>
+                <div class="header__cont">
+                  <a href="" class="header__antry-img header__antry">Войти</a>
+                </div>
+              </nav>
+              <div class="header__search">
+                <button aria-label="Найти" type="submit" class="header__search-btn">
+                  <svg class="header__svg" width="23" height="22" viewbox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="6.8678" height="1.71695"
+                        transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z"
+                          fill="white" />
+                  </svg>
+                  <span></span>
+                </button>
+                <input id="my_blok" class="header__input" type="search" name="text" placeholder="Поиск по сайту">
+              </div>
+          </div>
+        </div>
+        <div class="custum__container">
+          <div class="custom-scroll">
+              <div class="custom-scroll__body">
+                <nav class="custom-scroll__nav">
+                    <ul class="custom-scroll__list topmenu">
+                      <li>
+                          <button class="custom-scroll__link submenu-link1">Реализм<span></span></button>
+                            <ul class="submenu submenu1" data-simplebar>
+                              <li class="submenu__item" style="background-image: url('/img/57.png');"><a href="#">Тинторетто</a></li>
+                              <li class="submenu__item" style="background-image: url('/img/58.png');"><a href="#">Фридрих</a></li>
+                              <li class="submenu__item" style="background-image: url('/img/59.png');"><a href="#">Леонардо</a></li>
+                              <li class="submenu__item" style="background-image: url('/img/60.png');"><a href="#">Верроккьо</a></li>
+                            </ul>
+                      </li>
+                      <li>
+                          <button class="custom-scroll__link submenu-link2">Импрессионизм<span></span></button>
+                          <ul class="submenu submenu2" data-simplebar >
+                            <li class="submenu__item" style="background-image: url('/img/53.png');"><a href="#">Моне</a></li>
+                            <li class="submenu__item" style="background-image: url('/img/54.png');"><a href="#">Сислей</a></li>
+                            <li class="submenu__item" style="background-image: url('/img/55.png');"><a href="#">Мане</a></li>
+                            <li class="submenu__item" style="background-image: url('/img/56.png');" ><a href="#">Ренуар</a></li>
+                          </ul>
+                      </li>
+                      <li>
+                          <button class="custom-scroll__link submenu-link3">Постимпрессионизм<span></span></button>
+                          <ul class="submenu submenu3" data-simplebar>
+                            <li class="submenu__item" style="background-image: url('/img/49.png');"><a href="#">Ван Гог</a></li>
+                            <li class="submenu__item" style="background-image: url('/img/50.png');"><a href="#">Сезан</a></li>
+                            <li class="submenu__item" style="background-image: url('/img/51.png');" ><a href="#">Гоген</a></li>
+                            <li class="submenu__item" style="background-image: url('/img/52.png');"><a href="#">Сера</a></li>
+                          </ul>
+                      </li>
+                      <li>
+                          <button class="custom-scroll__link submenu-link4">Авангард<span></span></button>
+                          <ul class="submenu submenu4" data-simplebar>
+                            <li class="submenu__item" style="background-image: url('/img/45.png');"><a href="#">Кандинский</a></li>
+                            <li class="submenu__item" style="background-image: url('/img/46.png');"><a href="#">Маринетти</a></li>
+                            <li class="submenu__item" style="background-image: url('/img/47.png');"><a href="#">Малевич</a></li>
+                            <li class="submenu__item" style="background-image: url('/img/48.png');"><a href="#">Пикассо</a></li>
+                          </ul>
+                      </li>
+                      <li>
+                          <button class="custom-scroll__link submenu-link5">Футуризм<span></span></button>
+                          <ul class="submenu submenu5" data-simplebar>
+                            <li class="submenu__item" style="background-image: url('/img/44.png');"><a href="#">Карра</a></li>
+                            <li class="submenu__item" style="background-image: url('/img/43.png');"><a href="#">Прателла</a></li>
+                            <li class="submenu__item" style="background-image: url('/img/42.png');"><a href="#">Северини</a></li>
+                            <li class="submenu__item" style="background-image: url('/img/41.png');"><a href="#">Балла</a></li>
+                          </ul>
+                      </li>
+                    </ul>
+                    <form class="header__search2">
+                      <button aria-label="Найти" type="submit" class="header__search-btn2">
+                        <svg width="23" height="22" viewbox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="6.8678" height="1.71695"
+                              transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z"
+                                fill="white" />
+                        </svg>
+                      </button>
+                      <input class="header__input2" type="search" name="text" placeholder="Поиск по сайту">
+                  </form>
+                </nav>
+              </div>
+          </div>
+        </div>
+      </header>
+    <div class="content">
+        <div class="header__swiper">
+          <div class="swiper-container hero__swiper">
+            <div class="heder__text-container">
+              <h2 class="header__title">Прикоснитесь к прекрасному</h2>
+              <p class="header__text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
+              <button class="header__btn"><span>Подписаться на рассылк</span>у</button>
+            </div>
+          <div class="swiper-wrapper">
+              <div class="swiper-slide1 swiper-slide"></div>
+              <div class="swiper-slide2 swiper-slide"></div>
+              <div class="swiper-slide3 swiper-slide"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          </div>
+        </div>
+    </div>
+    <section class="about-us" id="aboutus">
+      <h2 class="about-us__title"> О нас</h2>
+      <p class="about-us__text">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно
+        определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних
+        резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой
+        процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных
+        исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом
+        комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия
+        представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.</p>
+    </section>
+    ,<section class="gallery" id="gallery">
+      <h2 class="gallery__title">Галерея</h2>
+      <div class="gallery__container">
+        <div class="gallery__select">
+          <p class="gallery__select-text">Фильтровать по:</p>
+          <select name="select">
+            <option value="Автор" class="gallery__select-text">Автор</option>
+            <option value="Направление" class="gallery__select-text">Направление</option>
+            <option value="Техника" class="gallery__select-text">Техника</option>
+          </select>
+          <p class="gallery__autotext">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a class="gallery__select-a" href="">авторизуйтесь</a>, либо воспользуйтесь лицензией. </p>
+        </div>
+
+        <div class="swiper-container gallery__swiper-container">
+          <div class="gallery__container-button">
+          <button class="gallery__swiper-button-prev"></button>
+          <div class="gallery__swiper_pagination"></div>
+          <button class="gallery__swiper-button-next"></button>
+          </div>
+          <div class="gallery swiper-wrapper">
+          <div class="swiper-slide gallery__slide">
+            <button class="gallery__img-btn">
+            <img class="bg" src="img/g70.jpg" alt="Картина">
+          </button></div>
+          <div class="swiper-slide gallery__slide">
+            <button class="gallery__img-btn">
+            <img src="img/g69.jpg" alt="Картина">
+          </button></div>
+          <div class="swiper-slide gallery__slide">
+            <button class="gallery__img-btn">
+            <img src="img/g80.png" alt="Картина">
+          </button></div>
+          <div class="swiper-slide gallery__slide">
+            <button class="gallery__img-btn">
+            <img src="img/g83.png" alt="Картина">
+          </button></div>
+          <div class="swiper-slide gallery__slide">
+            <button class="gallery__img-btn">
+            <img src="img/g84.png" alt="Картина">
+          </button></div>
+          <div class="swiper-slide gallery__slide">
+            <button class="gallery__img-btn">
+            <img src="img/g71.png" alt="Картина">
+          </button></div>
+          <div class="swiper-slide gallery__slide">
+            <button class="gallery__img-btn">
+            <img src="img/g86.png" alt="Картина">
+          </button></div>
+          <div class="swiper-slide gallery__slide">
+            <button class="gallery__img-btn">
+            <img src="img/g68.png" alt="Картина">
+          </button></div>
+          <div class="swiper-slide gallery__slide">
+            <button class="gallery__img-btn">
+            <img src="img/g81.png" alt="Картина">
+          </button></div>
+          <div class="swiper-slide gallery__slide">
+            <button class="gallery__img-btn">
+            <img src="img/g72.png" alt="Картина">
+          </button></div>
+          <div class="swiper-slide gallery__slide">
+            <button class="gallery__img-btn">
+            <img src="img/g82.png" alt="Картина">
+          </button></div>
+          <div class="swiper-slide gallery__slide">
+            <button class="gallery__img-btn">
+            <img src="img/g73.png" alt="Картина">
+          </button></div>
+          <div class="swiper-slide gallery__slide">
+            <button class="gallery__img-btn">
+            <img src="img/g77.png" alt="Картина">
+          </button></div>
+          <div class="swiper-slide gallery__slide">
+            <button class="gallery__img-btn">
+            <img src="img/g74.png" alt="Картина">
+          </button></div>
+          <div class="swiper-slide gallery__slide">
+            <button class="gallery__img-btn">
+            <img src="img/g79.png" alt="Картина">
+          </button></div>
+          <div class="swiper-slide gallery__slide">
+            <button class="gallery__img-btn">
+            <img src="img/g78.png" alt="Картина">
+          </button></div>
+          <div class="swiper-slide gallery__slide">
+            <button class="gallery__img-btn">
+            <img src="img/g75.png" alt="Картина">
+          </button></div>
+          <div class="swiper-slide gallery__slide">
+            <button class="gallery__img-btn">
+            <img src="img/g76.png" alt="Картина">
+          </button></div>
+          <div class="swiper-slide gallery__slide">
+            <button class="gallery__img-btn">
+            <img src="img/Rectangle86.png" alt="Картина">
+          </button></div>
+          <div class="swiper-slide gallery__slide">
+            <button class="gallery__img-btn">
+            <img src="img/Rectangle80.png" alt="Картина">
+          </button></div>
+          <div class="swiper-slide gallery__slide">
+            <button class="gallery__img-btn">
+            <img src="img/Rectangle90.png" alt="Картина">
+          </button></div>
+          <div class="swiper-slide gallery__slide">
+            <button class="gallery__img-btn">
+            <img src="img/Rectangle88.png" alt="Картина">
+          </button></div>
+          <div class="swiper-slide gallery__slide">
+            <button class="gallery__img-btn">
+            <img src="img/Rectangle82.png" alt="Картина">
+          </button></div>
+          <div class="swiper-slide gallery__slide">
+            <button class="gallery__img-btn">
+            <img src="img/Rectangle84.png" alt="Картина">
+          </button></div>
+          <div class="swiper-slide gallery__slide">
+            <button class="gallery__img-btn">
+            <img src="img/Rectangle87.png" alt="Картина">
+          </button></div>
+          <div class="swiper-slide gallery__slide">
+            <button class="gallery__img-btn">
+            <img src="img/Rectangle81.png" alt="Картина">
+          </button></div>
+          <div class="swiper-slide gallery__slide">
+            <button class="gallery__img-btn">
+            <img src="img/Rectangle91.png" alt="Картина">
+          </button></div>
+          <div class="swiper-slide gallery__slide">
+            <button class="gallery__img-btn">
+            <img src="img/Rectangle89.png" alt="Картина">
+          </button></div>
+          <div class="swiper-slide gallery__slide">
+            <button class="gallery__img-btn">
+            <img src="img/Rectangle83.png" alt="Картина">
+          </button></div>
+          <div class="swiper-slide gallery__slide">
+            <button class="gallery__img-btn">
+            <img src="img/Rectangle85.png" alt="Картина">
+          </button></div>
+        </div>
+        </div>
+      </div>
+    </section>
+      <section id="catalog" class="section-catalog">
+        <div class="section-catalog__tabs">
+        <h2 class="section-catalog__title">Каталог</h2>
+          <ul class="section-catalog__list">
+            <li class="section-catalog__list-item">
+              <button type="button" class="catalog__flag tabs__btn france" data-path="fran"></button>
+            </li>
+            <li class="section-catalog__list-item">
+              <button type="button" class="catalog__flag tabs__btn germany" data-path="ger"></button>
+            </li>
+            <li class="section-catalog__list-item">
+              <button type="button" class="catalog__flag tabs__btn hungary" data-path="hung"></button>
+            </li>
+            <li class="section-catalog__list-item">
+              <button type="button" class="catalog__flag tabs__btn active russia" data-path="rus"></button>
+            </li>
+            <li class="section-catalog__list-item">
+            <button type="button" class="catalog__flag tabs__btn belgium" data-path="belg"></button>
+            </li>
+          </ul>
+        </div>
+        <div class="section-catalog__description tab-content" data-target="fran">
+          <p class="section-catalog__text">
+            Actionnaires des plus grandes entreprises qui représentent un brillant Un exemple de culture politique de type européen continental, Sera déclarée violant les normes universelles d'éthique et de moralité. Faire partie de la vue d'ensemble, chercher à déplacer Production traditionnelle, les nanotechnologies restent à ce jour Le sort des libéraux qui aspirent à être fonctionnellement Éléments indépendants.</p>
+        </div>
+        <div class="section-catalog__description tab-content" data-target="ger">
+          <p class="section-catalog__text">
+            Aktionäre der größten Unternehmen, die eine helle vertreten Ein Beispiel für eine kontinentaleuropäische Art politischer Kultur, Wird als Verstoß gegen die universellen Normen der Ethik und Moral erklärt. Nur ein Teil des Gesamtbildes zu sein und zu verdrängen Traditionelle Produktion, Nanotechnologie bis heute erhalten Die Menge der Liberalen, die sich danach sehnen, funktional zu sein Unabhängige Elemente.</p>
+        </div>
+        <div class="section-catalog__description tab-content" data-target="hung">
+          <p class="section-catalog__text">
+            Azionisti delle più grandi aziende che rappresentano un brillante Un esempio di un tipo di cultura politica dell'Europa continentale, Saranno dichiarate violazioni delle norme universali di etica e moralità. Essere solo una parte del quadro generale, cercando di spiazzare Produzione tradizionale, le nanotecnologie rimangono ancora oggi Il sacco di liberali che desiderano essere funzionalmente Elementi indipendenti</p>
+        </div>
+        <div class="section-catalog__description tab-content active" data-target="rus">
+          <p class="section-catalog__text">
+            Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.</p>
+        </div>
+        <div class="section-catalog__description tab-content" data-target="belg">
+          <p class="section-catalog__text">
+            Actionnaires des plus grandes entreprises qui représentent un brillant Un exemple de culture politique de type européen continental, Sera déclarée violant les normes universelles d'éthique et de moralité. Faire partie de la vue d'ensemble, chercher à déplacer Production traditionnelle, les nanotechnologies restent à ce jour Le sort des libéraux qui aspirent à être fonctionnellement Éléments indépendants.</p>
+        </div>
+      <div class="section-catalog__container">
+        <div class="catalog__container__art">
+          <div class="container__art tab-art active" data-target="Grillandayo">
+          <img class="catalog__art-picture" src="img/image3.jpg" alt="Доменико Гирландайо">
+          <h3 class="catalog__art-name">Доменико Гирландайо</h3>
+            <small class="catalog__art-date">2 июня 1448 - 11 января 1494</small>
+            <p class="catalog__art-biography">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+          </div>
+          <div class="container__art tab-art" data-target="Bindo">
+            <img class="catalog__art-picture" src="img/Benedetto_di_Bindo.jpg" alt="Бенедетто ди Биндо">
+            <h3 class="catalog__art-name">Бенедетто ди Биндо</h3>
+            <small class="catalog__art-date">1380 - 1417</small>
+              <p class="catalog__art-biography">Бенедетто ди Биндо остался в истории искусства как сиенский художник, так сказать, «второго ряда», несмотря на то, что за свою короткую жизнь он выполнил ряд весьма престижных заказов, включая работы в Сиенском соборе.</p>
+          </div>
+          <div class="container__art tab-art" data-target="Ambrogio">
+            <img class="catalog__art-picture" src="img/Ambrogio.jpg" alt="Бергоньоне, Амброджо">
+            <h3 class="catalog__art-name">Бергоньоне, Амброджо</h3>
+            <small class="catalog__art-date">1453 - 1523</small>
+              <p class="catalog__art-biography">Прозвище говорит о его тяготении к бургундской школе, по манере ему близок Винченцо Фоппа. Испытал влияние Леонардо да Винчи. Наиболее известен работами 1486—1494 в монастырской обители картезианцев Чертоза ди Павия. Позднее работал в Милане в базилике Сант-Эусторджо и церкви Сан-Сатиро, после 1497 — в Лоди, в 1512 — в Бергамо, незадолго до смерти — снова в Милане, в базилике Сан-Симпличано.</p>
+          </div>
+          <div class="container__art tab-art" data-target="Bissolo">
+            <img class="catalog__art-picture" src="img/Francesco-Bissolo.jpg" alt="Биссоло, Франческо">
+            <h3 class="catalog__art-name">Биссоло, Франческо</h3>
+            <small class="catalog__art-date">1470-72 гг. - 20 апреля 1554 г.</small>
+              <p class="catalog__art-biography">Был венецианским художником Возрождения. Он также известен как Пьер Франческо Биссоло.</p>
+          </div>
+          <div class="container__art tab-art" data-target="Giovany">
+            <img class="catalog__art-picture" src="img/Giovany.jpg" alt="Больтраффио, Джованни">
+            <h3 class="catalog__art-name">Больтраффио, Джованни</h3>
+            <small class="catalog__art-date">1470-72 гг. - 20 апреля 1554 г.</small>
+              <p class="catalog__art-biography">Он описывается как ученик Джованни Беллини. Он нарисовал Христа, обменивающего терновый венец на золотой венец с изображением Святой Екатерины для церкви il Redentore , теперь в Gallerie dell'Accademia в Венеции , и Санта-Джустина в Тревизо соборе.</p>
+          </div>
+          <div class="container__art tab-art" data-target="lorenco">
+            <img class="catalog__art-picture" src="img/lorenco.jpg" alt="Лоренцо Лотто">
+            <h3 class="catalog__art-name">Лоренцо Лотто</h3>
+            <small class="catalog__art-date">1480 - 1556 г.</small>
+              <p class="catalog__art-biography">Один из крупнейших венецианских живописцев. Неспособный к компромиссам и в творчестве, и в области духовной, Лоренцо Лотто прожил беспокойную жизнь и часто испытывал материальные затруднения.</p>
+          </div>
+          <div class="container__art tab-art" data-target="Palma">
+            <img class="catalog__art-picture" src="img/Palma.jpg" alt="Пальма иль Веккьо">
+            <h3 class="catalog__art-name">Пальма иль Веккьо</h3>
+            <small class="catalog__art-date">1480-1528г.</small>
+              <p class="catalog__art-biography">Итальянский живописец эпохи Высокого Возрождения. Собственно, Якопо Негретти (Jacopo Negretti). Учился у Джованни Беллини, испытал влияние Лоренцо Лотто, Витторе Карпаччо, Джорджоне, Тициана; работал в Венеции.</p>
+          </div>
+          <div class="container__art tab-art" data-target="Albert">
+            <img class="catalog__art-picture" src="img/Albert.jpg" alt="Альбрехт Альтдорфер">
+            <h3 class="catalog__art-name">Альбрехт Альтдорфер</h3>
+            <small class="catalog__art-date">1480-1538г.</small>
+              <p class="catalog__art-biography">Немецкий художник, мастер живописных картин и гравюр на исторические и религиозные сюжеты. Работал в технике ксилографии и других видах гравюры, один из первых начал делать офорты.</p>
+          </div>
+          <div class="container__art tab-art" data-target="Gansml">
+            <img class="catalog__art-picture" src="img/Gansml.jpg" alt="Ганс Гольбейн младший">
+            <h3 class="catalog__art-name">Ганс Гольбейн младший</h3>
+            <small class="catalog__art-date">1497, Аугсбург — 1543, Лондон</small>
+              <p class="catalog__art-biography">Живописец, один из величайших немецких художников. Самый знаменитый представитель этой фамилии. Родился в Аугсбурге, Германия, учился живописи у своего отца — Ганса Гольбейна — старшего</p>
+          </div>
+          <div class="container__art tab-art" data-target="Moroni">
+            <img class="catalog__art-picture" src="img/moroni.jpg" alt="Джованни Баттиста Морони">
+            <h3 class="catalog__art-name">Джованни Баттиста Морони</h3>
+            <small class="catalog__art-date">1520-24 - 5 февраля 1579.</small>
+              <p class="catalog__art-biography">Его также зовут Джамбаттиста Морони . Наиболее известен своими элегантно реалистичными портретами местной знати и духовенства, он считается одним из великих художников-портретистов Италии шестнадцатого века.</p>
+          </div>
+          <div class="container__art tab-art" data-target="Antonis">
+            <img class="catalog__art-picture" src="img/Antonis.jpg" alt="Антонис Ван Дейк">
+            <h3 class="catalog__art-name">Антонис Ван Дейк</h3>
+            <small class="catalog__art-date">родился 22 марта 1599.</small>
+              <p class="catalog__art-biography">Антверпене, в семье богатого торговца тканями Франса ван Дейка и Марии, дочери Дирка Куперса и Катарины Конинкс. Был крещён 23 марта 1599 года (под именем Антонио). Антонис был седьмым из двенадцати детей.</p>
+          </div>
+          <div class="container__art tab-art" data-target="Caracci">
+            <img class="catalog__art-picture" src="img/Caracci.jpg" alt="Аннибале Карраччи">
+            <h3 class="catalog__art-name">Аннибале Карраччи</h3>
+            <small class="catalog__art-date">3 ноября 1560 г. — 15 июля 1609 г.</small>
+              <p class="catalog__art-biography">Итальянский живописец, гравер. Учился живописи у своего кузена Лодовико Каррачи.</p>
+          </div>
+          <div class="container__art tab-art" data-target="Rubens">
+            <img class="catalog__art-picture" src="img/Peter_Paul_Rubens.jpg" alt="Питер Пауль Рубенс">
+            <h3 class="catalog__art-name">Питер Пауль Рубенс</h3>
+            <small class="catalog__art-date">28 июня 1577 — 30 мая 1640 г.</small>
+              <p class="catalog__art-biography">Плодовитый южнонидерландский (фламандский) живописец, как никто другой воплотивший подвижность, безудержную жизненность и чувственность европейской живописи эпохи барокко.</p>
+          </div>
+          <div class="container__art tab-art" data-target="Hals">
+            <img class="catalog__art-picture" src="img/Frans_Hals.jpg" alt="Франса Халса">
+            <h3 class="catalog__art-name">Франса Халса</h3>
+            <small class="catalog__art-date">1582/1583, Антверпен — 1666, Харлем</small>
+              <p class="catalog__art-biography">Голландский художник, писал в эпоху так называемого Золотого века. Родился в 1582 или 1583 году в семье ткача Франсуа Франса Халса ван Мехелена и его второй жены Адриантье.</p>
+          </div>
+          <div class="container__art tab-art" data-target="Vatto">
+            <img class="catalog__art-picture" src="img/Vatto.jpg" alt="Антуан Ватто">
+            <h3 class="catalog__art-name">Антуан Ватто</h3>
+            <small class="catalog__art-date">10 октября 1684-18 июля 1721 г. (36 лет)</small>
+              <p class="catalog__art-biography">Французский живописец и рисовальщик, академик Королевской академии живописи и скульптуры; выдающийся мастер периода французского Регентства, ставший одним из основоположников искусства рококо. За недолгий период творческой жизни, большая часть которой прошла в Париже, Ватто оставил богатое наследие: около тысячи рисунков и более 200 картин.</p>
+          </div>
+          <div class="container__art tab-art" data-target="Jan">
+            <img class="catalog__art-picture" src="img/Jan.jpg" alt="Жан-Батист Симеон Шарден">
+            <h3 class="catalog__art-name">Жан-Батист Симеон Шарден</h3>
+            <small class="catalog__art-date">2 ноября 1699 — 6 декабря 1779 г.</small>
+              <p class="catalog__art-biography">Французский живописец, один из известнейших художников XVIII столетия и один из лучших колористов в истории живописи, прославившийся своими работами в области натюрморта и жанровой живописи.</p>
+          </div>
+          <div class="container__art tab-art" data-target="Hogarthjpg">
+            <img class="catalog__art-picture" src="img/Hogarthjpg.jpg" alt="Уильям Хогарт">
+            <h3 class="catalog__art-name">Уильям Хогарт</h3>
+            <small class="catalog__art-date">10 ноября 1697 — 26 октября 1764 г. (66 лет)</small>
+              <p class="catalog__art-biography">Английский художник, основатель и крупный представитель национальной школы живописи, иллюстратор, автор сатирических гравюр, открыватель новых жанров в живописи и графике. Многие свои произведения художник, испытавший на себе влияние идей философов Просвещения, подчинил задаче воспитания с помощью художественного творчества нравственного начала в человеке и искоренения пороков.</p>
+          </div>
+          <div class="container__art tab-art" data-target="Pompeo">
+            <img class="catalog__art-picture" src="img/pompeo.jpg" alt="Помпео Батони">
+            <h3 class="catalog__art-name">Помпео Батони</h3>
+            <small class="catalog__art-date">25 января 1708, Лукка — 4 февраля 1787 г.</small>
+              <p class="catalog__art-biography">Итальянский живописец и рисовальщик академического направления римской школы. Один из самых успешных и востребованных итальянских живописцев XVIII века.</p>
+          </div>
+          <div class="container__art tab-art" data-target="Gensborro">
+            <img class="catalog__art-picture" src="img/ТомасаГейнсборо.jpg" alt="Томас Гейнсборо">
+            <h3 class="catalog__art-name">Томас Гейнсборо</h3>
+            <small class="catalog__art-date">14 мая 1727 — 2 августа 1788 гг.</small>
+              <p class="catalog__art-biography">Был английским портретистом, пейзажистом и гравером. Наряду со своим соперником сэром Джошуа Рейнольдсом, он считается одним из самых важных британских художников второй половины XVIII века. Он писал быстро, а произведения его зрелости характеризуются легкой палитрой и легкими мазками. Несмотря на пребывание плодотворным портретистом, Гейнсборо получал большее удовлетворение от своих пейзажей.</p>
+          </div>
+          <div class="container__art tab-art" data-target="Albert">
+            <img class="catalog__art-picture" src="img/Albert.jpg" alt="Aльберт Бредов">
+            <h3 class="catalog__art-name">Aльберт Бредов</h3>
+            <small class="catalog__art-date">1828-1899 гг.</small>
+              <p class="catalog__art-biography">Выдающийся живописец, пейзажист, мастер литографии, театральный декоратор. Родился в Германии. Прибыл в Россию в 1856 году по приглашению Дирекции императорских театров.</p>
+          </div>
+          <div class="container__art tab-art" data-target="Maksimov">
+            <img class="catalog__art-picture" src="img/МаксимовВасилийМаксимович.jpg" alt="Максимов Василий Максимович">
+            <h3 class="catalog__art-name">Максимов Василий Максимович</h3>
+            <small class="catalog__art-date">17 января 1844 - 18 ноября [1 декабря] 1911 гг.</small>
+              <p class="catalog__art-biography">Pусский художник, передвижник, живописец-жанрист</p>
+          </div>
+          <div class="container__art tab-art" data-target="Segantinny">
+            <img class="catalog__art-picture" src="img/Segantinny.jpg" alt="Джованни Сегантини">
+            <h3 class="catalog__art-name">Джованни Сегантини</h3>
+            <small class="catalog__art-date">15.01.1858 - 28.09.1899 гг.</small>
+              <p class="catalog__art-biography">Итальянский живописец. С 1876 учился в АХ в Милане.</p>
+          </div>
+          <div class="container__art tab-art" data-target="Madrazo">
+            <img class="catalog__art-picture" src="img/Madrazo.jpg" alt="Раймундо де Мадрасо">
+            <h3 class="catalog__art-name">Раймундо де Мадрасо</h3>
+            <small class="catalog__art-date">1841-1920 гг.</small>
+              <p class="catalog__art-biography">Испания – Франция – испанский художник, последователь академического классицизма с элементами реализма. Раймундо – представитель известной династии де Мадрасо, младший сын Федерико де Мадрасо-и-Кунц. Родился в Риме, где его отец продолжал обучение после окончания Академии в Мадриде.</p>
+          </div>
+          <div class="container__art tab-art" data-target="Wilhelm">
+            <img class="catalog__art-picture" src="img/Bildnis_Wilhelm_Amberg.jpg" alt="Вильгельм Август Лебрехт Амберг">
+            <h3 class="catalog__art-name">Вильгельм Август Лебрехт Амберг</h3>
+            <small class="catalog__art-date">25 февраля 1822 - 1873 гг.</small>
+              <p class="catalog__art-biography">Получил всеобщее признание и был награждён почётной медалью «За заслуги в искусстве», а четыре года спустя получил золотую медаль. В 1886 году Вильгельм Амберг вошёл в состав Учёного совета Берлинской академии художеств. Помимо жанровой живописи, Амберг рисовал иллюстрации для журналов самой разной направленности, а также достаточно серьёзно занимался литографией.</p>
+          </div>
+          <div class="container__art tab-art" data-target="Kupka">
+            <img class="catalog__art-picture" src="img/Kupkajpg.jpg" alt="Франтишек Купка">
+            <h3 class="catalog__art-name">Франтишек Купка</h3>
+            <small class="catalog__art-date">23 сентября 1871 – 21 июня 1957 гг.</small>
+              <p class="catalog__art-biography">Обычно его имя связывают с орфизмом, хотя в своем творчестве художник эволюционировал от реализма к абстрактному искусству.</p>
+          </div>
+          <div class="container__art tab-art" data-target="Craft">
+            <img class="catalog__art-picture" src="img/Percy_Robert_Craft.jpg" alt="Перси Роберт Крафт">
+            <h3 class="catalog__art-name">Перси Роберт Крафт</h3>
+            <small class="catalog__art-date">1870 – 1959 гг.</small>
+              <p class="catalog__art-biography">Pодился в обеспеченной семье, получил хорошее домашнее образование. В 1870-х годах изучал живопись в Художественной школе Хетэрли и в лондонской Школе искусств Слейда.</p>
+          </div>
+          <div class="container__art tab-art" data-target="Roberts">
+            <img class="catalog__art-picture" src="img/Tom_Roberts.jpg" alt="Робертс, Том">
+            <h3 class="catalog__art-name">Робертс, Том</h3>
+            <small class="catalog__art-date">9 марта 1856—14 сентября 1931 гг.</small>
+              <p class="catalog__art-biography">Известный австралийский художник, один из крупнейших представителей Гейдельбергской школы, реалистического течения в австралийской живописи конца XIX века.</p>
+          </div>
+          <div class="container__art tab-art" data-target="Lavery">
+            <img class="catalog__art-picture" src="img/John_Lavery.png" alt="Джон Лавери">
+            <h3 class="catalog__art-name">Джон Лавери</h3>
+            <small class="catalog__art-date">20 марта 1856 - 10 января 1941 гг.</small>
+              <p class="catalog__art-biography">Ирландский и шотландский художник, мастер портретной и пейзажной живописи. Джон Лавери родился в Белфасте в католической семье, он был сыном обедневшего проповедника.</p>
+          </div>
+          <div class="container__art tab-art" data-target="Béraud">
+            <img class="catalog__art-picture" src="img/Jean_Béraud,_by_Jean_Béraud.jpg" alt="Жан Беро">
+            <h3 class="catalog__art-name">Жан Беро</h3>
+            <small class="catalog__art-date">31 декабря 1848 - 14 октября 1935 гг.</small>
+              <p class="catalog__art-biography">Французский салонный живописец, приобретший известность многочисленными жанровыми работами, изображавшими жизнь Парижа (в том числе ночного) и парижского светского общества, и картинами на евангельские сюжеты в современной обстановке.</p>
+          </div>
+          <div class="container__art tab-art" data-target="Kunickas">
+            <img class="catalog__art-picture" src="img/Kunickas.jpg" alt="Йонас Куникас">
+            <h3 class="catalog__art-name">Йонас Куникас</h3>
+            <small class="catalog__art-date">Родился в 1978 г.</small>
+              <p class="catalog__art-biography">Литовский художник. Родился в 1978 году. В 2002 году получил степень магистра по архитектуре в "Мондиал Арт Академии".</p>
+          </div>
+          <div class="container__art tab-art" data-target="Safronov">
+            <img class="catalog__art-picture" src="img/266px-Nikas_Safronov_13.03.10-022.jpg" alt="Ни́кас Степа́нович Сафро́нов">
+            <h3 class="catalog__art-name">Ни́кас Степа́нович Сафро́нов</h3>
+            <small class="catalog__art-date">Родился 8 апреля 1956г.</small>
+              <p class="catalog__art-biography">Советский и российский художник. Действительный член Российской Академии художеств (2012), заслуженный художник Российской Федерации (2013)[2][3], народный художник Республики Дагестан (2017)[4], профессор Ульяновского государственного университета.</p>
+          </div>
+          <div class="container__art tab-art" data-target="Cherkasov">
+            <img class="catalog__art-picture" src="img/ЧеркасовВладимирВладимирович.jpg" alt="Черкасов Владимир Владимирович">
+            <h3 class="catalog__art-name">Черкасов Владимир Владимирович</h3>
+            <small class="catalog__art-date">Родился 29 января 1953 г.</small>
+              <p class="catalog__art-biography">Специальное образование: окончил художественное училище по специальности "Промышленная графика и реклама". Живёт и работает в Москве.Состоит в реестре профессиональных художников России. Имеет официальную правительственную награду: орден Почёта.</p>
+          </div>
+          <div class="container__art tab-art" data-target="Librein">
+            <img class="catalog__art-picture" src="img/librein.jpg" alt="Рико Лебрен">
+            <h3 class="catalog__art-name">Рико Лебрен</h3>
+            <small class="catalog__art-date">10 декабря 1900 - 9 мая 1964 гг.</small>
+              <p class="catalog__art-biography">Получил образование в Неаполитанской академии изящных искусств и прошел практику на фабрике витражей. После эмиграции в США в 1924 году он несколько лет работал художником по рекламе в Питтсбурге и Нью-Йорке.</p>
+          </div>
+          <div class="container__art tab-art" data-target="Ray">
+            <img class="catalog__art-picture" src="img/Lisa_Ray.jpg" alt="Лиза Рэй">
+            <h3 class="catalog__art-name">Лиза Рэй</h3>
+            <small class="catalog__art-date">Родилaсь 4 апреля 1972г.</small>
+              <p class="catalog__art-biography">Kанадская актриса кино и телевидения польско-бенгальского происхождения, наиболее известная своими ролями в фильмах индийских режиссёров.</p>
+          </div>
+      </div>
+        <ul id="accordion" class="catalog__container-accordion">
+        <li class="accordion__period">
+          <button class="period__btn" tabindex="0">C 1400 по 1499 гг.</button>
+            <ul class="accordion__period-list">
+              <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn" data-path="Bindo">Бенедетто ди Биндо</button></li>
+              <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn" data-path="Ambrogio">Бергоньоне, Амброджо</button></li>
+              <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn" data-path="Bissolo">Биссоло, Франческо</button></li>
+              <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn" data-path="Giovany">Больтраффио, Джованни</button></li>
+              <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn">Бонсиньори, Франческо</button></li>
+              <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn">Боттичини, Рафаэлло</button></li>
+              <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn">Брамантино</button></li>
+              <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn">Бреа, Людовико</button></li>
+              <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn">Бьяджо д’Антонио Туччи</button></li>
+              <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn">Веккьетта</button></li>
+              <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn">Андреа Верроккьо</button></li>
+              <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn" data-path="Grillandayo">Доменико Гирландайо</button></li>
+              <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn">Беноццо Гоццоли</button></li>
+              <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn">Граначчи, Франческо</button></li>
+              <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn">Грегорио ди Чекко</button></li>
+              <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn">Джованни да Удине</button></li>
+              <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn">Джованни ди Паоло</button></li>
+              <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn">Джорджоне</button></li>
+              <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn">Парентино, Бернардо</button></li>
+              <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn">Пезеллино</button></li>
+              <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn">Пьетро Перуджино</button></li>
+              <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn">Перуцци, Бальдассаре</button></li>
+              <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn">Пизанелло</button></li>
+              <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn">Пинтуриккьо</button></li>
+            </ul>
+          </li>
+          <li class="accordion__period">
+          <button class="period__btn" tabindex="1">C 1500 по 1599 гг.</button>
+            <ul class="accordion__period-list">
+            <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn" data-path="lorenco">Лоренцо Лотто</button></li>
+            <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn" data-path="Palma">Пальма иль Веккьо</button></li>
+            <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn" data-path="Albert">PalmaАльбрехт Альтдорфер</button></li>
+            <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn" data-path="Gansml">Ганс Гольбейн младший</button></li>
+            <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn" data-path="Moroni">Джованни Баттиста Морони</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Бонсиньори, Франческо</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Боттичини, Рафаэлло</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Брамантино</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Бреа, Людовико</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Бьяджо д’Антонио Туччи</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Веккьетта</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Андреа Верроккьо</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Беноццо Гоццоли</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Граначчи, Франческо</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Грегорио ди Чекко</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Джованни да Удине</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Джованни ди Паоло</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Джорджоне</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Парентино, Бернардо</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Пезеллино</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Пьетро Перуджино</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Перуцци, Бальдассаре</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Пизанелло</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Пинтуриккьо</button></li>
+            </ul>
+          </li>
+          <li class="accordion__period">
+          <button class="period__btn" tabindex="2">C 1600 по 1699 гг.</button>
+            <ul class="accordion__period-list">
+            <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn" data-path="Antonis">Антонис Ван Дейк</button></li>
+            <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn" data-path="Caracci">Аннибале Карраччи</button></li>
+            <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn" data-path="Rubens">Питер Пауль Рубенс</button></li>
+            <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn" data-path="Hals">Франса Халса</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Бонсиньори, Франческо</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Боттичини, Рафаэлло</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Брамантино</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Бреа, Людовико</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Бьяджо д’Антонио Туччи</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Веккьетта</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Андреа Верроккьо</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Беноццо Гоццоли</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Граначчи, Франческо</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Грегорио ди Чекко</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Джованни да Удине</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Джованни ди Паоло</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Джорджоне</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Парентино, Бернардо</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Пезеллино</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Пьетро Перуджино</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Перуцци, Бальдассаре</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Пизанелло</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Пинтуриккьо</button></li>
+            </ul>
+          </li>
+          <li class="accordion__period">
+          <button class="period__btn" tabindex="3">C 1700 по 1799 гг.</button>
+            <ul class="accordion__period-list">
+            <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn" data-path="Vatto">Антуан Ватто</button></li>
+            <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn" data-path="Jan">Жан-Батист Симеон Шарден</button></li>
+            <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn" data-path="Hogarthjpg">Уильям Хогарт</button></li>
+            <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn" data-path="Pompeo">Помпео Батони</button></li>
+            <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn" data-path="Gensborro">Томас Гейнсборо</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Бонсиньори, Франческо</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Боттичини, Рафаэлло</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Брамантино</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Бреа, Людовико</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Бьяджо д’Антонио Туччи</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Веккьетта</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Андреа Верроккьо</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Беноццо Гоццоли</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Граначчи, Франческо</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Грегорио ди Чекко</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Джованни да Удине</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Джованни ди Паоло</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Джорджоне</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Парентино, Бернардо</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Пезеллино</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Пьетро Перуджино</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Перуцци, Бальдассаре</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Пизанелло</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Пинтуриккьо</button></li>
+              </ul>
+          </li>
+          <li class="accordion__period">
+          <button class="period__btn" tabindex="4">C 1800 по 1899 гг.</button>
+            <ul class="accordion__period-list">
+            <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn" data-path="Albert">Aльберт Бредов</button></li>
+            <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn" data-path="Maksimov">Максимов Василий Максимович</button></li>
+            <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn" data-path="Segantinny">Джованни Сегантини</button></li>
+            <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn" data-path="Madrazo">Раймундо де Мадрасо</button></li>
+            <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn" data-path="Wilhelm">Вильгельм Август Лебрехт Амберг</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Бонсиньори, Франческо</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Боттичини, Рафаэлло</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Брамантино</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Бреа, Людовико</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Бьяджо д’Антонио Туччи</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Веккьетта</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Андреа Верроккьо</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Беноццо Гоццоли</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Граначчи, Франческо</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Грегорио ди Чекко</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Джованни да Удине</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Джованни ди Паоло</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Джорджоне</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Парентино, Бернардо</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Пезеллино</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Пьетро Перуджино</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Перуцци, Бальдассаре</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Пизанелло</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Пинтуриккьо</button></li>
+            </ul>
+          </li>
+          <li class="accordion__period">
+          <button class="period__btn" tabindex="5">C 1900 по 1999 гг.</button>
+            <ul class="accordion__period-list">
+            <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn" data-path="Kupka">Франтишек Купка</button></li>
+            <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn" data-path="Craft">Перси Роберт Крафт</button></li>
+            <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn" data-path="Roberts">Робертс, Том</button></li>
+            <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn" data-path="Lavery">Джон Лавери</button></li>
+            <li class="accordion__period-item">
+              <button type="button" class="accordion__period-item-btn art__btn" data-path="Béraud">Жан Беро</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Бонсиньори, Франческо</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Боттичини, Рафаэлло</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Брамантино</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Бреа, Людовико</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Бьяджо д’Антонио Туччи</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Веккьетта</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Андреа Верроккьо</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Беноццо Гоццоли</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Граначчи, Франческо</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Грегорио ди Чекко</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Джованни да Удине</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Джованни ди Паоло</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Джорджоне</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Парентино, Бернардо</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Пезеллино</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Пьетро Перуджино</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Перуцци, Бальдассаре</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Пизанелло</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn">Пинтуриккьо</button></li>
+            </ul>
+          </li>
+          <li class="accordion__period">
+            <button class="period__btn" tabindex="6">C 2000 г.</button>
+            <ul class="accordion__period-list">
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn" data-path="Kunickas">Йонас Куникас</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn" data-path="Safronov">Ни́кас Степа́нович Сафро́нов</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn" data-path="Cherkasov">Черкасов Владимир Владимирович</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn" data-path="Librein">Рико Лебрен</button></li>
+              <li class="accordion__period-item">
+                <button type="button" class="accordion__period-item-btn art__btn" data-path="Ray">Лиза Рэй</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Бонсиньори, Франческо</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Боттичини, Рафаэлло</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Брамантино</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Бреа, Людовико</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Бьяджо д’Антонио Туччи</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Веккьетта</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Андреа Верроккьо</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Беноццо Гоццоли</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Граначчи, Франческо</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Грегорио ди Чекко</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Джованни да Удине</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Джованни ди Паоло</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Джорджоне</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Парентино, Бернардо</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Пезеллино</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Пьетро Перуджино</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Перуцци, Бальдассаре</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Пизанелло</button></li>
+                <li class="accordion__period-item">
+                  <button type="button" class="accordion__period-item-btn art__btn">Пинтуриккьо</button></li>
+              </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/focus-visible.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/swiper-bundle.js"></script>
+  <script src="js/inputmask.min.js"></script>
+  <script src="js/simplebar.min.js"></script>
+  <script src="js/just-validate.min.js"></script>
+  <script src="js/choices.min.js"></script>
+  <script src="js/index.js" defer></script>
+</body>
+</html>
